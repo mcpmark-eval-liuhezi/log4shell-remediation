@@ -1,0 +1,12 @@
+name: Log4Shell audit no-op
+
+# Minimal, manually-triggerable no-op workflow for repo hygiene verification.
+on:
+  workflow_dispatch:
+
+jobs:
+  audit-noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No-op
+        run: echo "Log4Shell remediation audit workflow ran successfully. Nothing to do."
